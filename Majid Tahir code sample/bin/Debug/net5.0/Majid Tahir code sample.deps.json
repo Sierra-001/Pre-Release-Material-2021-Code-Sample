@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Majid Tahir code sample/1.0.0": {
+        "runtime": {
+          "Majid Tahir code sample.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Majid Tahir code sample/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,16 @@
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Majid Tahir code sample\bin\Debug\net5.0\Majid Tahir code sample.exe
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Majid Tahir code sample\bin\Debug\net5.0\Majid Tahir code sample.deps.json
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Majid Tahir code sample\bin\Debug\net5.0\Majid Tahir code sample.runtimeconfig.json
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Majid Tahir code sample\bin\Debug\net5.0\Majid Tahir code sample.runtimeconfig.dev.json
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Majid Tahir code sample\bin\Debug\net5.0\Majid Tahir code sample.dll
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Majid Tahir code sample\bin\Debug\net5.0\ref\Majid Tahir code sample.dll
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Majid Tahir code sample\bin\Debug\net5.0\Majid Tahir code sample.pdb
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Majid Tahir code sample\obj\Debug\net5.0\Majid Tahir code sample.vbprojAssemblyReference.cache
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Majid Tahir code sample\obj\Debug\net5.0\Majid Tahir code sample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Majid Tahir code sample\obj\Debug\net5.0\Majid Tahir code sample.AssemblyInfoInputs.cache
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Majid Tahir code sample\obj\Debug\net5.0\Majid Tahir code sample.AssemblyInfo.vb
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Majid Tahir code sample\obj\Debug\net5.0\Majid Tahir code sample.vbproj.CoreCompileInputs.cache
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Majid Tahir code sample\obj\Debug\net5.0\Majid Tahir code sample.dll
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Majid Tahir code sample\obj\Debug\net5.0\ref\Majid Tahir code sample.dll
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Majid Tahir code sample\obj\Debug\net5.0\Majid Tahir code sample.pdb
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Majid Tahir code sample\obj\Debug\net5.0\Majid Tahir code sample.genruntimeconfig.cache
