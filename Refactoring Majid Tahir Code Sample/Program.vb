@@ -1,5 +1,4 @@
 Imports System
-
 Module Program
     Sub Main(args As String())
         'task 1
@@ -31,7 +30,7 @@ Module Program
         UpTrainMoney(3) = 0
 
         Dim TrainTimeDown(3) As String
-        Dim TotalDownSeats(3), OccupiedDownSeat(3), DownTrainMoney(3), MaxPassengerTrain(3) As Integer
+        Dim TotalDownSeats(3), OccupiedDownSeat(3), DownTrainMoney(3), MaxPassengerTrain(3), ArSpace(1) As Integer
         Dim Choice, Avaliability, Space As String
         Dim NumOfPassenger, UpTrip, DownTrip, Cost, Discount, TwoWayTickets As Integer
 
@@ -68,27 +67,27 @@ Module Program
         Console.WriteLine("Welcome to TRAIN JOURNEY Display Screen")
         For Count = 0 To 3
             If (Count = 0) Then
-                Console.WriteLine("Train Number " & "Departure" & " Seat's Avaliable" & " Occupied Seat's" & " Money Collected")
-                Console.WriteLine("------------ " & "---------" & " " & "----------------" & " " & "---------------" & " " & "---------------")
+                Console.WriteLine("Train Number " & "Departure" & " Seat's Avaliable" & " Occupied Seat's")
+                Console.WriteLine("------------ " & "---------" & " " & "----------------" & " " & "---------------")
             End If
             If (Len(TotalUpSeats(0) <= 3)) Then
-                Console.WriteLine(Right(Space, 5) & Count + 1 & Right(Space, 7) & TrainTimeUP(Count) & Right(Space, 5) & TotalUpSeats(Count) & Right(Space, 14) & OccupiedUpSeat(Count) & "  " & Right(Space, 13) & UpTrainMoney(Count))
+                Console.WriteLine(Right(Space, 5) & Count + 1 & Right(Space, 7) & TrainTimeUP(Count) & Right(Space, 5) & TotalUpSeats(Count) & Right(Space, 14) & OccupiedUpSeat(Count))
             Else
                 If (Len(TotalUpSeats(0) <= 2)) Then
-                Console.WriteLine(Right(Space, 5) & Count + 1 & Right(Space, 7) & TrainTimeUP(Count) & Right(Space, 5) & TotalUpSeats(Count) & Right(Space, 14) & OccupiedUpSeat(Count) & " " & Right(Space, 13) & UpTrainMoney(Count))
-            Else
-                Console.WriteLine(Right(Space, 5) & Count + 1 & Right(Space, 7) & TrainTimeUP(Count) & Right(Space, 5) & TotalUpSeats(Count) & Right(Space, 14) & OccupiedUpSeat(Count) & Right(Space, 13) & UpTrainMoney(Count))
-            End If
+                    Console.WriteLine(Right(Space, 5) & Count + 1 & Right(Space, 7) & TrainTimeUP(Count) & Right(Space, 5) & TotalUpSeats(Count) & Right(Space, 14) & OccupiedUpSeat(Count))
+                Else
+                    Console.WriteLine(Right(Space, 5) & Count + 1 & Right(Space, 7) & TrainTimeUP(Count) & Right(Space, 5) & TotalUpSeats(Count) & Right(Space, 14) & OccupiedUpSeat(Count))
+                End If
             End If
         Next Count
 
         Console.WriteLine()
         For Count = 0 To 3
             If (Count = 0) Then
-                Console.WriteLine("Train Number " & "Arrival " & "Seat's Avaliable" & " Occupied Seat's" & " Money Collected")
-                Console.WriteLine("------------ " & "------- " & "----------------" & " " & "---------------" & " " & "---------------")
+                Console.WriteLine("Train Number " & "Arrival " & "Seat's Avaliable" & " Occupied Seat's")
+                Console.WriteLine("------------ " & "------- " & "----------------" & " " & "---------------")
             End If
-            Console.WriteLine(Right(Space, 5) & Count + 1 & Right(Space, 7) & TrainTimeDown(Count) & Right(Space, 3) & TotalDownSeats(Count) & Right(Space, 14) & Format(OccupiedDownSeat(Count), "0  ") & Right(Space, 13) & Format(DownTrainMoney(Count), "0    "))
+            Console.WriteLine(Right(Space, 5) & Count + 1 & Right(Space, 7) & TrainTimeDown(Count) & Right(Space, 3) & TotalDownSeats(Count) & Right(Space, 14) & OccupiedDownSeat(Count))
         Next Count
 
         'Task2
@@ -100,108 +99,115 @@ Module Program
             Console.Write("Enter Number of passenger's : ")
             NumOfPassenger = Console.ReadLine()
             Console.WriteLine()
-            TotalPassengers = TotalPassengers + NumOfPassenger
+            TotalPassengers = (TotalPassengers + NumOfPassenger)
 
             Console.Write("Enter Trian Number [1 - 4]? :")
             UpTrip = (Console.ReadLine() - 1)
             Console.WriteLine()
-            OccupiedUpSeat(UpTrip) = OccupiedUpSeat(UpTrip) + NumOfPassenger
-            TotalUpSeats(UpTrip) = TotalUpSeats(UpTrip) - NumOfPassenger
+            OccupiedUpSeat(UpTrip) = (OccupiedUpSeat(UpTrip) + NumOfPassenger)
+            TotalUpSeats(UpTrip) = (TotalUpSeats(UpTrip) - NumOfPassenger)
 
             Console.Write("Enter Train Number For Return [1 - 4]? ")
             DownTrip = (Console.ReadLine() - 1)
             Console.WriteLine()
-            OccupiedDownSeat(DownTrip) = OccupiedDownSeat(DownTrip) + NumOfPassenger
-            TotalDownSeats(DownTrip) = TotalDownSeats(DownTrip) - NumOfPassenger
+            OccupiedDownSeat(DownTrip) = (OccupiedDownSeat(DownTrip) + NumOfPassenger)
+            TotalDownSeats(DownTrip) = (TotalDownSeats(DownTrip) - NumOfPassenger)
 
-            Cost = NumOfPassenger * OneWayTicket
+            Cost = (NumOfPassenger * OneWayTicket)
 
-            Discount = Cost - (OneWayTicket * (NumOfPassenger \ 10))
+            Discount = (Cost - (OneWayTicket * (NumOfPassenger \ 10)))
             'integer division for discount of every 10th passengers
 
-            TwoWayTickets = Discount * 2
+            TwoWayTickets = (Discount * 2)
             'you have to buy ticket for Uptrip and Downtrip
 
-            UpTrainMoney(UpTrip) = UpTrainMoney(UpTrip) + Discount
-            DownTrainMoney(DownTrip) = DownTrainMoney(DownTrip) + Discount
-            TotalAmount = TotalAmount + UpTrainMoney(UpTrip) + DownTrainMoney(DownTrip)
+            UpTrainMoney(UpTrip) = (UpTrainMoney(UpTrip) + Discount)
+            DownTrainMoney(DownTrip) = (DownTrainMoney(DownTrip) + Discount)
+            TotalAmount = (TotalAmount + UpTrainMoney(UpTrip) + DownTrainMoney(DownTrip))
 
             'For Task3
             Console.Clear()
 
             For Count = 0 To 3
                 If (Count = 0) Then
-                    Console.WriteLine("Train Number " & "Departure" & " Seat's Avaliable" & " Occupied Seat's" & " Money Collected")
-                    Console.WriteLine("------------ " & "---------" & " " & "----------------" & " " & "---------------" & " " & "---------------")
+                    Console.WriteLine("Train Number " & "Departure" & " Seat's Avaliable" & " Occupied Seat's" & " Status")
+                    Console.WriteLine("------------ " & "---------" & " " & "----------------" & " " & "---------------" & " " & "----------------")
                 End If
                 If Not (TotalUpSeats(Count) <> 0) Then
                     Avaliability = "Train is Full"
                 Else
                     Avaliability = "Seat's Avaliable"
                 End If
-                If (OccupiedUpSeat(Count) < 10) Then
-                    Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeUP(Count) & Left(Space, 5) & TotalUpSeats(Count) & Left(Space, 14) & OccupiedUpSeat(Count) & Left(Space, 15) & UpTrainMoney(Count) & Avaliability)
+                If (TotalUpSeats(Count) > 99) Then
+                    ArSpace(0) = 14
                 Else
-                    If (OccupiedUpSeat(Count) >= 10 And OccupiedUpSeat(Count) < 100) Then
-                        Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeUP(Count) & Left(Space, 5) & TotalUpSeats(Count) & Left(Space, 14) & OccupiedUpSeat(Count) & Left(Space, 14) & UpTrainMoney(Count) & Avaliability)
+                    If (TotalUpSeats(Count) > 9 And TotalUpSeats(Count) < 100) Then
+                        ArSpace(0) = 15
                     Else
-                        Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeUP(Count) & Left(Space, 5) & TotalUpSeats(Count) & Left(Space, 14) & OccupiedUpSeat(Count) & Left(Space, 13) & UpTrainMoney(Count) & Avaliability)
+                        ArSpace(0) = 16
                     End If
                 End If
-
-                'If (Len(TotalUpSeats(Count) = 3)) Then
-                '    Console.WriteLine(Right(Space, 5) & Count + 1 & Right(Space, 7) & TrainTimeUP(Count) & Right(Space, 5) & TotalUpSeats(Count) & Right(Space, 14) & OccupiedUpSeat(Count) & Left(Space, 13) & Format(UpTrainMoney(Count), "0    "))
-                'Else
-                '    If (Len(TotalUpSeats(Count) = 2)) Then
-                '        Console.WriteLine(Right(Space, 5) & Count + 1 & Right(Space, 7) & TrainTimeUP(Count) & Right(Space, 5) & TotalUpSeats(Count) & Right(Space, 14) & OccupiedUpSeat(Count) & Left(Space, 14) & Format(UpTrainMoney(Count), "0    "))
-                '    Else
-                '        Console.WriteLine(Right(Space, 5) & Count + 1 & Right(Space, 7) & TrainTimeUP(Count) & Right(Space, 5) & TotalUpSeats(Count) & Right(Space, 14) & OccupiedUpSeat(Count) & Left(Space, 15) & Format(UpTrainMoney(Count), "0    "))
-                '    End If
-                'End If
+                If (OccupiedUpSeat(Count) <= 9) Then
+                    ArSpace(1) = 15
+                Else
+                    If (OccupiedUpSeat(Count) > 9 And OccupiedUpSeat(Count) <= 99) Then
+                        ArSpace(1) = 14
+                    Else
+                        ArSpace(1) = 13
+                    End If
+                End If
+                If (OccupiedUpSeat(Count) < 10) Then
+                    Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeUP(Count) & Left(Space, 5) & TotalUpSeats(Count) & Left(Space, ArSpace(0)) & OccupiedUpSeat(Count) & Left(Space, ArSpace(1)) & Avaliability)
+                Else
+                    If (OccupiedUpSeat(Count) >= 10 And OccupiedUpSeat(Count) < 100) Then
+                        Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeUP(Count) & Left(Space, 5) & TotalUpSeats(Count) & Left(Space, ArSpace(0)) & OccupiedUpSeat(Count) & Left(Space, ArSpace(1)) & Avaliability)
+                    Else
+                        Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeUP(Count) & Left(Space, 5) & TotalUpSeats(Count) & Left(Space, ArSpace(0)) & OccupiedUpSeat(Count) & Left(Space, ArSpace(1)) & Avaliability)
+                    End If
+                End If
             Next Count
 
             Console.WriteLine()
             For Count = 0 To 3
                 If (Count = 0) Then
-                    Console.WriteLine("Train Number " & "Arrival " & "Seat's Avaliable" & " Occupied Seat's" & " Money Collected")
-                    Console.WriteLine("------------ " & "------- " & "----------------" & " " & "---------------" & " " & "---------------")
+                    Console.WriteLine("Train Number " & "Arrival " & "Seat's Avaliable" & " Occupied Seat's" & " Status")
+                    Console.WriteLine("------------ " & "------- " & "----------------" & " " & "---------------" & " " & "----------------")
                 End If
                 If Not (TotalUpSeats(Count) <> 0) Then
                     Avaliability = "Train is Full"
                 Else
                     Avaliability = "Seat's Avaliable"
                 End If
+                If (TotalDownSeats(Count) > 99) Then
+                    ArSpace(0) = 14
+                Else
+                    If (TotalDownSeats(Count) > 9 And TotalDownSeats(Count) < 100) Then
+                        ArSpace(0) = 15
+                    Else
+                        ArSpace(0) = 16
+                    End If
+                End If
+                If (OccupiedDownSeat(Count) <= 9) Then
+                    ArSpace(1) = 15
+                Else
+                    If (OccupiedDownSeat(Count) > 9 And OccupiedDownSeat(Count) <= 99) Then
+                        ArSpace(1) = 14
+                    Else
+                        ArSpace(1) = 13
+                    End If
+                End If
                 If (OccupiedDownSeat(Count) < 10) Then
-                    Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeDown(Count) & Right(Space, 3) & TotalDownSeats(Count) & Right(Space, 14) & OccupiedDownSeat(Count) & Left(Space, 15) & DownTrainMoney(Count) & Avaliability)
+                    Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeDown(Count) & Right(Space, 3) & TotalDownSeats(Count) & Right(Space, ArSpace(0)) & OccupiedDownSeat(Count) & Left(Space, ArSpace(1)) & Avaliability)
                 Else
                     If (OccupiedDownSeat(Count) >= 10 And OccupiedDownSeat(Count) < 100) Then
-                        Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeDown(Count) & Right(Space, 3) & TotalDownSeats(Count) & Right(Space, 14) & OccupiedDownSeat(Count) & Left(Space, 14) & DownTrainMoney(Count) & Avaliability)
+                        Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeDown(Count) & Right(Space, 3) & TotalDownSeats(Count) & Right(Space, ArSpace(0)) & OccupiedDownSeat(Count) & Left(Space, ArSpace(1)) & Avaliability)
                     Else
-                        Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeDown(Count) & Right(Space, 3) & TotalDownSeats(Count) & Right(Space, 14) & OccupiedDownSeat(Count) & Left(Space, 13) & DownTrainMoney(Count) & Avaliability)
+                        Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeDown(Count) & Right(Space, 3) & TotalDownSeats(Count) & Right(Space, ArSpace(0)) & OccupiedDownSeat(Count) & Left(Space, ArSpace(1)) & Avaliability)
                     End If
                 End If
             Next Count
 
-            'For Count = 0 To 3
-            'Console.WriteLine("Train Num: " & Count & "Train Time Up: " & TrainTimeUP(Count) & "Total Seats Up: " & TotalUpSeats(Count) & "Occupied Seats: " & OccupiedUpSeat(Count))
-            'Console.WriteLine("Train Num: " & Count & "Train Time Down: " & TrainTimeDown(Count) & "total Seats Down: " & TotalDownSeats(Count) & "Occupied Seats: " & OccupiedDownSeat(Count))
-            'Console.WriteLine("DownTrain Money = " & DownTrainMoney(Count))
-
-            'If TotalUpSeats(Count) = 0 Then
-            '    Console.WriteLine(TrainTimeUP(Count) & " : Train is FULL : booking CLOSED")
-            'Else
-            '    Console.WriteLine(TrainTimeUP(Count) & " : Seats Available : booking OPEN")
-            'End If
-            'Console.WriteLine("----------------------------------------")
-
-            'If TotalDownSeats(Count) = 0 Then
-            '    Console.WriteLine(TrainTimeDown(Count) & " : Train is FULL : booking CLOSED")
-            'Else
-            '    Console.WriteLine(TrainTimeDown(Count) & " : Seats Available : booking OPEN")
-            'End If
-            'Console.WriteLine("----------------------------------------")
-            'Next
-            Console.WriteLine("Do you want to buy more tickets? True for yes and False for no")
+            Console.WriteLine("Do You want to buy Ticket's [yes/no]? ")
             Choice = UCase(Console.ReadLine())
         End While
 
@@ -210,18 +216,69 @@ Module Program
         Dim MaxTrainDown As String
         Console.Clear()
         Console.WriteLine("------ END OF THE DAY ----------")
+        For count = 0 To 3
+            If count = 0 Then
+                Console.WriteLine("Train Number " & "Departure" & " Seat's Avaliable" & " Occupied Seat's" & " Money Collected")
+                Console.WriteLine("------------ " & "---------" & " " & "----------------" & " " & "---------------" & " " & "---------------")
+            End If
+            If (TotalUpSeats(count) > 99) Then
+                ArSpace(0) = 14
+            Else
+                If (TotalUpSeats(count) > 9 And TotalUpSeats(count) < 100) Then
+                    ArSpace(0) = 15
+                Else
+                    ArSpace(0) = 16
+                End If
+            End If
+
+            If (OccupiedUpSeat(count) < 10) Then
+                Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeUP(count) & Left(Space, 5) & TotalUpSeats(count) & Left(Space, ArSpace(0)) & OccupiedUpSeat(count) & Left(Space, 15) & UpTrainMoney(count))
+            Else
+                If (OccupiedUpSeat(count) >= 10 And OccupiedUpSeat(count) < 100) Then
+                    Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeUP(count) & Left(Space, 5) & TotalUpSeats(count) & Left(Space, ArSpace(0)) & OccupiedUpSeat(count) & Left(Space, 14) & UpTrainMoney(count))
+                Else
+                    Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeUP(count) & Left(Space, 5) & TotalUpSeats(count) & Left(Space, ArSpace(0)) & OccupiedUpSeat(count) & Left(Space, 13) & UpTrainMoney(count))
+                End If
+            End If
+        Next
+        For count = 0 To 3
+            If count = 0 Then
+                Console.WriteLine("Train Number " & "Arrival " & "Seat's Avaliable" & " Occupied Seat's" & " Money Collected")
+                Console.WriteLine("------------ " & "------- " & "----------------" & " " & "---------------" & " " & "---------------")
+            End If
+            If (TotalDownSeats(count) > 99) Then
+                ArSpace(0) = 14
+            Else
+                If (TotalDownSeats(count) > 9 And TotalDownSeats(count) < 100) Then
+                    ArSpace(0) = 15
+                Else
+                    ArSpace(0) = 16
+                End If
+            End If
+
+            If (OccupiedDownSeat(count) < 10) Then
+                Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeDown(count) & Right(Space, 3) & TotalDownSeats(count) & Right(Space, ArSpace(0)) & OccupiedDownSeat(count) & Left(Space, 15) & DownTrainMoney(count))
+            Else
+                If (OccupiedDownSeat(count) >= 10 And OccupiedDownSeat(count) < 100) Then
+                    Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeDown(count) & Right(Space, 3) & TotalDownSeats(count) & Right(Space, ArSpace(0)) & OccupiedDownSeat(count) & Left(Space, 14) & DownTrainMoney(count))
+                Else
+                    Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeDown(count) & Right(Space, 3) & TotalDownSeats(count) & Right(Space, ArSpace(0)) & OccupiedDownSeat(count) & Left(Space, 13) & DownTrainMoney(count))
+                End If
+            End If
+        Next
+
         For Count = 0 To 3
             If OccupiedUpSeat(Count) > MaxPassengerTrain(Count) Then
-                MaxPassengerTrain(Count) = MaxPassengerTrain(Count) + OccupiedUpSeat(Count)
+                MaxPassengerTrain(Count) = (MaxPassengerTrain(Count) + OccupiedUpSeat(Count))
                 MaxTrainUp = TrainTimeUP(Count)
             End If
 
-            Console.WriteLine("----------------------------------------")
-            Console.WriteLine("Train Num: " & Count & " Train Time Up: " & TrainTimeUP(Count) & " total seats down: " & TotalUpSeats(Count) & " occupied seats: " & OccupiedUpSeat(Count))
-            Console.WriteLine("UPtrain Money = " & UpTrainMoney(Count))
-            Console.WriteLine("Train Num: " & Count & " train time up: " & TrainTimeDown(Count) & " total seats down: " & TotalDownSeats(Count) & " occupied seats: " & OccupiedDownSeat(Count))
-            Console.WriteLine("DownTrain Money = " & DownTrainMoney(Count))
-            Console.WriteLine("----------------------------------------")
+            'Console.WriteLine("----------------------------------------")
+            'Console.WriteLine("Train Num: " & Count & " Train Time Up: " & TrainTimeUP(Count) & " total seats down: " & TotalUpSeats(Count) & " occupied seats: " & OccupiedUpSeat(Count))
+            'Console.WriteLine("UPtrain Money = " & UpTrainMoney(Count))
+            'Console.WriteLine("Train Num: " & Count & " train time up: " & TrainTimeDown(Count) & " total seats down: " & TotalDownSeats(Count) & " occupied seats: " & OccupiedDownSeat(Count))
+            'Console.WriteLine("DownTrain Money = " & DownTrainMoney(Count))
+            'Console.WriteLine("----------------------------------------")
         Next
         Console.WriteLine("Total Money Earned Today: " & TotalAmount)
         Console.WriteLine("Total Passengers Travalled TODAY: " & TotalPassengers)
