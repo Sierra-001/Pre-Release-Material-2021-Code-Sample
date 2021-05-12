@@ -4,6 +4,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Refactoring_Majid_Tahir_Code_Sample</RootNamespace>
     <TargetFramework>net5.0</TargetFramework>
+    <StartupObject>Refactoring_Majid_Tahir_Code_Sample.Program</StartupObject>
   </PropertyGroup>
 
 </Project>

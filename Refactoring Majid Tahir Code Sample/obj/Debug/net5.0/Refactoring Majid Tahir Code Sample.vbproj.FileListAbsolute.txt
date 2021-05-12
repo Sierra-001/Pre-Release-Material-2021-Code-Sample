@@ -1,0 +1,16 @@
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Refactoring Majid Tahir Code Sample\bin\Debug\net5.0\Refactoring Majid Tahir Code Sample.exe
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Refactoring Majid Tahir Code Sample\bin\Debug\net5.0\Refactoring Majid Tahir Code Sample.deps.json
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Refactoring Majid Tahir Code Sample\bin\Debug\net5.0\Refactoring Majid Tahir Code Sample.runtimeconfig.json
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Refactoring Majid Tahir Code Sample\bin\Debug\net5.0\Refactoring Majid Tahir Code Sample.runtimeconfig.dev.json
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Refactoring Majid Tahir Code Sample\bin\Debug\net5.0\Refactoring Majid Tahir Code Sample.dll
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Refactoring Majid Tahir Code Sample\bin\Debug\net5.0\ref\Refactoring Majid Tahir Code Sample.dll
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Refactoring Majid Tahir Code Sample\bin\Debug\net5.0\Refactoring Majid Tahir Code Sample.pdb
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Refactoring Majid Tahir Code Sample\obj\Debug\net5.0\Refactoring Majid Tahir Code Sample.vbprojAssemblyReference.cache
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Refactoring Majid Tahir Code Sample\obj\Debug\net5.0\Refactoring Majid Tahir Code Sample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Refactoring Majid Tahir Code Sample\obj\Debug\net5.0\Refactoring Majid Tahir Code Sample.AssemblyInfoInputs.cache
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Refactoring Majid Tahir Code Sample\obj\Debug\net5.0\Refactoring Majid Tahir Code Sample.AssemblyInfo.vb
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Refactoring Majid Tahir Code Sample\obj\Debug\net5.0\Refactoring Majid Tahir Code Sample.vbproj.CoreCompileInputs.cache
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Refactoring Majid Tahir Code Sample\obj\Debug\net5.0\Refactoring Majid Tahir Code Sample.dll
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Refactoring Majid Tahir Code Sample\obj\Debug\net5.0\ref\Refactoring Majid Tahir Code Sample.dll
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Refactoring Majid Tahir Code Sample\obj\Debug\net5.0\Refactoring Majid Tahir Code Sample.pdb
+C:\Users\Jonathan\Downloads\School Work\Computer Science (Form 5)\Pre-release\New folder\Refactoring Majid Tahir Code Sample\obj\Debug\net5.0\Refactoring Majid Tahir Code Sample.genruntimeconfig.cache
