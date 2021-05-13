@@ -157,12 +157,12 @@ Module Program
                     End If
                 End If
                 If (OccupiedUpSeat(Count) < 10) Then
-                    Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeUP(Count) & Left(Space, 5) & TotalUpSeats(Count) & Left(Space, ArSpace(0)) & OccupiedUpSeat(Count) & Left(Space, ArSpace(1)) & Avaliability)
+                    Console.WriteLine(Left(Space, 5) & Count + 1 & Left(Space, 7) & TrainTimeUP(Count) & Left(Space, 5) & TotalUpSeats(Count) & Left(Space, ArSpace(0)) & OccupiedUpSeat(Count) & Left(Space, ArSpace(1)) & Avaliability)
                 Else
                     If (OccupiedUpSeat(Count) >= 10 And OccupiedUpSeat(Count) < 100) Then
-                        Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeUP(Count) & Left(Space, 5) & TotalUpSeats(Count) & Left(Space, ArSpace(0)) & OccupiedUpSeat(Count) & Left(Space, ArSpace(1)) & Avaliability)
+                        Console.WriteLine(Left(Space, 5) & Count + 1 & Left(Space, 7) & TrainTimeUP(Count) & Left(Space, 5) & TotalUpSeats(Count) & Left(Space, ArSpace(0)) & OccupiedUpSeat(Count) & Left(Space, ArSpace(1)) & Avaliability)
                     Else
-                        Console.WriteLine(Left(Space, 5) & 1 & Left(Space, 7) & TrainTimeUP(Count) & Left(Space, 5) & TotalUpSeats(Count) & Left(Space, ArSpace(0)) & OccupiedUpSeat(Count) & Left(Space, ArSpace(1)) & Avaliability)
+                        Console.WriteLine(Left(Space, 5) & Count + 1 & Left(Space, 7) & TrainTimeUP(Count) & Left(Space, 5) & TotalUpSeats(Count) & Left(Space, ArSpace(0)) & OccupiedUpSeat(Count) & Left(Space, ArSpace(1)) & Avaliability)
                     End If
                 End If
             Next Count
@@ -197,12 +197,12 @@ Module Program
                     End If
                 End If
                 If (OccupiedDownSeat(Count) < 10) Then
-                    Console.WriteLine(Left(Space, 5) & Count & Left(Space, 7) & TrainTimeDown(Count) & Right(Space, 3) & TotalDownSeats(Count) & Right(Space, ArSpace(0)) & OccupiedDownSeat(Count) & Left(Space, ArSpace(1)) & Avaliability)
+                    Console.WriteLine(Left(Space, 5) & Count + 1 & Left(Space, 7) & TrainTimeDown(Count) & Right(Space, 3) & TotalDownSeats(Count) & Right(Space, ArSpace(0)) & OccupiedDownSeat(Count) & Left(Space, ArSpace(1)) & Avaliability)
                 Else
                     If (OccupiedDownSeat(Count) >= 10 And OccupiedDownSeat(Count) < 100) Then
-                        Console.WriteLine(Left(Space, 5) & Count & Left(Space, 7) & TrainTimeDown(Count) & Right(Space, 3) & TotalDownSeats(Count) & Right(Space, ArSpace(0)) & OccupiedDownSeat(Count) & Left(Space, ArSpace(1)) & Avaliability)
+                        Console.WriteLine(Left(Space, 5) & Count + 1 & Left(Space, 7) & TrainTimeDown(Count) & Right(Space, 3) & TotalDownSeats(Count) & Right(Space, ArSpace(0)) & OccupiedDownSeat(Count) & Left(Space, ArSpace(1)) & Avaliability)
                     Else
-                        Console.WriteLine(Left(Space, 5) & Count & Left(Space, 7) & TrainTimeDown(Count) & Right(Space, 3) & TotalDownSeats(Count) & Right(Space, ArSpace(0)) & OccupiedDownSeat(Count) & Left(Space, ArSpace(1)) & Avaliability)
+                        Console.WriteLine(Left(Space, 5) & Count + 1 & Left(Space, 7) & TrainTimeDown(Count) & Right(Space, 3) & TotalDownSeats(Count) & Right(Space, ArSpace(0)) & OccupiedDownSeat(Count) & Left(Space, ArSpace(1)) & Avaliability)
                     End If
                 End If
             Next Count
@@ -232,12 +232,12 @@ Module Program
             End If
 
             If (OccupiedUpSeat(count) < 10) Then
-                Console.WriteLine(Left(Space, 5) & count & Left(Space, 7) & TrainTimeUP(count) & Left(Space, 5) & TotalUpSeats(count) & Left(Space, ArSpace(0)) & OccupiedUpSeat(count) & Left(Space, 15) & UpTrainMoney(count))
+                Console.WriteLine(Left(Space, 5) & count + 1 & Left(Space, 7) & TrainTimeUP(count) & Left(Space, 5) & TotalUpSeats(count) & Left(Space, ArSpace(0)) & OccupiedUpSeat(count) & Left(Space, 15) & UpTrainMoney(count))
             Else
                 If (OccupiedUpSeat(count) >= 10 And OccupiedUpSeat(count) < 100) Then
-                    Console.WriteLine(Left(Space, 5) & count & Left(Space, 7) & TrainTimeUP(count) & Left(Space, 5) & TotalUpSeats(count) & Left(Space, ArSpace(0)) & OccupiedUpSeat(count) & Left(Space, 14) & UpTrainMoney(count))
+                    Console.WriteLine(Left(Space, 5) & count + 1 & Left(Space, 7) & TrainTimeUP(count) & Left(Space, 5) & TotalUpSeats(count) & Left(Space, ArSpace(0)) & OccupiedUpSeat(count) & Left(Space, 14) & UpTrainMoney(count))
                 Else
-                    Console.WriteLine(Left(Space, 5) & count & Left(Space, 7) & TrainTimeUP(count) & Left(Space, 5) & TotalUpSeats(count) & Left(Space, ArSpace(0)) & OccupiedUpSeat(count) & Left(Space, 13) & UpTrainMoney(count))
+                    Console.WriteLine(Left(Space, 5) & count + 1 & Left(Space, 7) & TrainTimeUP(count) & Left(Space, 5) & TotalUpSeats(count) & Left(Space, ArSpace(0)) & OccupiedUpSeat(count) & Left(Space, 13) & UpTrainMoney(count))
                 End If
             End If
         Next
@@ -257,12 +257,12 @@ Module Program
             End If
 
             If (OccupiedDownSeat(count) < 10) Then
-                Console.WriteLine(Left(Space, 5) & count & Left(Space, 7) & TrainTimeDown(count) & Right(Space, 3) & TotalDownSeats(count) & Right(Space, ArSpace(0)) & OccupiedDownSeat(count) & Left(Space, 15) & DownTrainMoney(count))
+                Console.WriteLine(Left(Space, 5) & count + 1 & Left(Space, 7) & TrainTimeDown(count) & Right(Space, 3) & TotalDownSeats(count) & Right(Space, ArSpace(0)) & OccupiedDownSeat(count) & Left(Space, 15) & DownTrainMoney(count))
             Else
                 If (OccupiedDownSeat(count) >= 10 And OccupiedDownSeat(count) < 100) Then
-                    Console.WriteLine(Left(Space, 5) & count & Left(Space, 7) & TrainTimeDown(count) & Right(Space, 3) & TotalDownSeats(count) & Right(Space, ArSpace(0)) & OccupiedDownSeat(count) & Left(Space, 14) & DownTrainMoney(count))
+                    Console.WriteLine(Left(Space, 5) & count + 1 & Left(Space, 7) & TrainTimeDown(count) & Right(Space, 3) & TotalDownSeats(count) & Right(Space, ArSpace(0)) & OccupiedDownSeat(count) & Left(Space, 14) & DownTrainMoney(count))
                 Else
-                    Console.WriteLine(Left(Space, 5) & count & Left(Space, 7) & TrainTimeDown(count) & Right(Space, 3) & TotalDownSeats(count) & Right(Space, ArSpace(0)) & OccupiedDownSeat(count) & Left(Space, 13) & DownTrainMoney(count))
+                    Console.WriteLine(Left(Space, 5) & count + 1 & Left(Space, 7) & TrainTimeDown(count) & Right(Space, 3) & TotalDownSeats(count) & Right(Space, ArSpace(0)) & OccupiedDownSeat(count) & Left(Space, 13) & DownTrainMoney(count))
                 End If
             End If
         Next
