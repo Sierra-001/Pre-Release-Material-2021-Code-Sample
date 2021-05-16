@@ -1,5 +1,4 @@
 # Pre-Release-Material-2021
-
 ##1. Check both folder for clear changes:
 ##i.Pre-Release-Material-2021-Code-Sample/Majid Tahir code sample/Program.vb.
 ##ii.Pre-Release-Material-2021-Code-Sample/Refactoring Majid Tahir Code Sample/Program.vb.
