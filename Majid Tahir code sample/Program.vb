@@ -5,7 +5,7 @@ Module Program
         'task 1
 
         Console.WriteLine("PRE-RELEASE MJ2021 SOLUTION IN VB")
-        Const OneWayTicket = 25
+        Dim OneWayTicket As Integer = 25
 
         Dim TrainTimeUP() As String = {"9:00", "11:00", "13:00", "15:00"}
         Dim totalupseats() = {480, 480, 480, 480}
@@ -25,9 +25,9 @@ Module Program
 
         Console.WriteLine("Welcome to TRAIN JOURNEY Display Screen")
         For count = 0 To 3
-            Console.WriteLine("Train Num: " & count & "Train Time up: " & TrainTimeUP(count) & "Total seats Up: " & totalupseats(count) & "Occupied Seats: " & occupiedUpseat(count))
+            Console.WriteLine("Train Num: " & count & " Train Time up: " & TrainTimeUP(count) & " Total seats Up: " & totalupseats(count) & " Occupied Seats: " & occupiedUpseat(count))
             Console.WriteLine("UpTrain Money = " & UPtrainmoney(count))
-            Console.WriteLine("Train Num: " & count & "Train Time down: " & TrainTimeDown(count) & "Total Seats Down: " & totaldownseats(count) & "Occupied Seats: " & occupiedDownseat(count))
+            Console.WriteLine("Train Num: " & count & " Train Time down: " & TrainTimeDown(count) & " Total Seats Down: " & totaldownseats(count) & " Occupied Seats: " & occupiedDownseat(count))
             Console.WriteLine("DownTrain Money = " & DOWNtrainmoney(count))
             Console.WriteLine("----------------------------------------")
         Next
@@ -47,7 +47,7 @@ Module Program
             occupiedUpseat(Uptrip) = occupiedUpseat(Uptrip) + numofopassenger
             totalupseats(Uptrip) = totalupseats(Uptrip) - numofopassenger
 
-            Console.WriteLine("Enter Train Number to journey DOWN [0,,1,2,3")
+            Console.WriteLine("Enter Train Number to journey DOWN [01,2,3")
             Downtrip = Console.ReadLine()
             occupiedDownseat(Downtrip) = occupiedDownseat(Downtrip) + numofopassenger
             totaldownseats(Downtrip) = totaldownseats(Downtrip) - numofopassenger
@@ -65,8 +65,8 @@ Module Program
             'For Task3
             Console.Clear()
             For count = 0 To 3
-                Console.WriteLine("Train Num: " & count & "Train Time Up: " & TrainTimeUP(count) & "Total Seats Up: " & totalupseats(count) & "Occupied Seats: " & TrainTimeUP(count))
-                Console.WriteLine("Train Num: " & count & "Train Time Down: " & TrainTimeDown(count) & "total Seats Down: " & totaldownseats(count) & "Occupied Seats: " & occupiedDownseat(count))
+                Console.WriteLine("Train Num: " & count & " Train Time Up: " & TrainTimeUP(count) & " Total Seats Up: " & totalupseats(count) & " Occupied Seats: " & TrainTimeUP(count))
+                Console.WriteLine("Train Num: " & count & " Train Time Down: " & TrainTimeDown(count) & " Total Seats Down: " & totaldownseats(count) & " Occupied Seats: " & occupiedDownseat(count))
                 Console.WriteLine("DownTrain Money = " & DOWNtrainmoney(count))
 
                 If totalupseats(count) = 0 Then
@@ -89,13 +89,17 @@ Module Program
 
         'task 3
         Dim Maxtrainup As String
-        Dim Maxtriandown As String
+        Dim Maxtraindown As String
         Console.Clear()
         Console.WriteLine("------ END OF THE DAY ----------")
         For count = 0 To 3
             If occupiedUpseat(count) > MaxPassengerTrain(count) Then
                 MaxPassengerTrain(count) = MaxPassengerTrain(count) + occupiedUpseat(count)
                 Maxtrainup = TrainTimeUP(count)
+            End If
+            If (occupiedDownseat(count) > MaxPassengerTrain(count)) Then
+                MaxPassengerTrain(count) = MaxPassengerTrain(count) + occupiedDownseat(count)
+                Maxtraindown = TrainTimeDown(count)
             End If
 
             Console.WriteLine("----------------------------------------")
@@ -108,7 +112,7 @@ Module Program
         Console.WriteLine("Total Money Earned Today: " & totalamount)
         Console.WriteLine("Total Passengers Travalled TODAY: " & totalpassengers)
         Console.WriteLine("Maxtrain Passengers Train Upwards: " & Maxtrainup)
-        Console.WriteLine("Maxtrain Passengers Train Downwards: " & Maxtriandown)
+        Console.WriteLine("Maxtrain Passengers Train Downwards: " & Maxtraindown)
         Console.ReadKey()
 
     End Sub
